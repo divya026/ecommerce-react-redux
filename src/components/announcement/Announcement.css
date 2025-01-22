@@ -1,0 +1,33 @@
+.announcement-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #21a5b7;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.announcement-container h1 {
+  margin: 5px 0;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  25% {
+    color: #023f47;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #023f47;
+  }
+  100% {
+    color: white;
+  }
+}

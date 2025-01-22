@@ -1,0 +1,86 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 100%;
+}
+.navbar-left {
+  margin-top: 0.8rem;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.navbar-input {
+  width: 100%;
+  padding: 8px 33px 8px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-input:focus {
+  border-color: #21a5b7;
+  color: #21a5b7;
+}
+
+.navbar-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.navbar-center {
+  flex: 2;
+  align-items: center;
+  color: #21a5b7;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 1;
+  font-size: 15px;
+  color: #21a5b7;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbar-right-button {
+  font-size: 14px;
+  color: #21a5b7;
+  cursor: pointer;
+  font-weight: 600;
+  background: none;
+  border: none;
+}
+
+.navbar-right-button:hover {
+  color: #055c68;
+}
+
+.login-container:hover {
+  color: #055c68;
+}
+
+.cart-container:hover {
+  color: #055c68;
+}
