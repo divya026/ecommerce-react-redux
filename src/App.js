@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Slider from "./components/slider/Slider";
+import Categories from "./components/categories/Categories";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Home />
         <Navbar />
         <Slider />
+        <Categories />
       </header>
     </div>
   );
