@@ -70,25 +70,25 @@ export const newArrivals = [
     id: 1,
     img: products1,
     title: "Casual Dress Fall",
-    price: 34.99,
+    price: "Rs 3000",
   },
   {
     id: 2,
     img: products2,
     title: "Summer dress",
-    price: 22.99,
+    price: "Rs 3100",
   },
   {
     id: 3,
     img: products3,
     title: "Essential top",
-    price: 49.99,
+    price: "Rs 3400",
   },
   {
     id: 4,
     img: products4,
     title: "spring going out",
-    price: 45.99,
+    price: "Rs 5000",
   },
 ];
 
@@ -97,25 +97,25 @@ export const bestsellers = [
     id: 5,
     img: products5,
     title: "faux suede jacket",
-    price: 54.99,
+    price: "Rs 2900",
   },
   {
     id: 6,
     img: products6,
     title: "Puffer Jacket",
-    price: 72.99,
+    price: "Rs 3600",
   },
   {
     id: 7,
     img: products7,
     title: "Wool Coat",
-    price: 99.99,
+    price: "Rs 6700",
   },
   {
     id: 8,
     img: products8,
     title: "Lightweight Puffer Jacket",
-    price: 65.99,
+    price: "Rs 5600",
   },
 ];
 
