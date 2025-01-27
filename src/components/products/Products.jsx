@@ -16,10 +16,10 @@ const Products = ({ items, heading }) => {
             </div>
             <div className="product-info">
               <button className="icon">
-                <CiShoppingCart className="icon-btn" /> Add to Cart
+                <CiShoppingCart /> Add to Cart
               </button>
               <button className="icon">
-                <CiSearch className="icon-btn" /> Search
+                <CiSearch /> Search
               </button>
             </div>
           </div>

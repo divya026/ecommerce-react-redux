@@ -6,6 +6,7 @@ import Slider from "./components/slider/Slider";
 import Categories from "./components/categories/Categories";
 import NewArrivals from "./components/products/NewArrivals";
 import Bestseller from "./components/products/Bestseller";
+import NewsLetter from "./components/newsletter/NewsLetter";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Categories />
         <NewArrivals />
         <Bestseller />
+        <NewsLetter />
       </header>
     </div>
   );
