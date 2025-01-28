@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { IoMdSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div className="navbar-right-item">
-          <button className="navbar-right-button">Register</button>
+          <Link to="/register">
+            <button className="navbar-right-button">Register</button>
+          </Link>
         </div>
         <div className="navbar-right-item">
           <button className="navbar-right-button">Login</button>
