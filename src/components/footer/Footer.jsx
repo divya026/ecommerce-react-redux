@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-left">
         <h3>Shopping App</h3>
-        <div>
+        <div className="footer-left-desc">
           Discover the perfect dress for every season in our exclusive
           collection of summer, winter, and spring dresses for women. From
           breezy floral designs and cozy winter knits to vibrant spring florals,
