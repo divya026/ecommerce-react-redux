@@ -13,6 +13,8 @@
   color: white;
   border-radius: 10px;
   padding: 30px 40px;
+  backdrop-filter: blur(30px);
+  background: transparent;
 }
 
 .register-wrapper h2 {
@@ -26,7 +28,7 @@
   padding-top: 0.4rem;
 }
 
-.input-box input {
+.register-wrapper .input-box input {
   width: 100%;
   height: 60%;
   border-radius: 20px;
@@ -35,13 +37,13 @@
   padding: 0.3rem;
 }
 
-.input-box input:focus {
+.register-wrapper .input-box input:focus {
   border-color: rgb(246, 125, 26);
   color: white;
   outline: none;
 }
 
-.input-box input::placeholder {
+.register-wrapper .input-box input::placeholder {
   color: white;
   font-size: 12px;
 }
@@ -82,6 +84,5 @@
 }
 
 .register-wrapper button:hover {
-  /* background-color: #e6e4e4; */
   background-color: rgb(250, 231, 170);
 }
