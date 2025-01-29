@@ -1,0 +1,107 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../assets/login.jpg") no-repeat center;
+  background-size: contain;
+  background-position: center left;
+  background-color: rgb(253, 157, 33);
+}
+
+.login-wrapper {
+  width: 300px;
+  height: 70vh;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login-wrapper h2 {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.login-wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 0 0 1rem;
+  margin: 0 0 1rem;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.login-wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 2rem;
+}
+
+.remember-forgot label input {
+  accent-color: blue;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper button {
+  width: 100%;
+  height: 30px;
+  margin-top: 2rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+.login-wrapper button:hover {
+  background-color: rgb(250, 231, 170);
+}
+
+.login-wrapper .register-link {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
