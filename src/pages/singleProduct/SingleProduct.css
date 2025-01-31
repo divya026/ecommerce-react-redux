@@ -1,0 +1,120 @@
+.singleProduct-container {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f6f6;
+}
+
+.singleProduct-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(203, 202, 202);
+}
+
+.singleProduct-left {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+  background-color: #e0e0e0;
+}
+
+.singleProduct-left-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.singleProduct-left-image img {
+  height: 80%;
+  width: 80%;
+}
+
+.singleProduct-right {
+  flex: 2;
+  background-color: white;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  padding-left: 1rem;
+}
+
+.singleProduct-right-title-price {
+  padding-top: 0.5rem;
+  color: #21a5b7;
+}
+
+.singleProduct-right-title-price h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.singleProduct-right-title-price p {
+  font-size: medium;
+}
+
+.singleProduct-right-desc {
+  color: #21a5b7;
+  padding-top: 1.5rem;
+}
+
+.singleProduct-right-desc h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.singleProduct-right-desc p {
+  font-size: small;
+  color: gray;
+}
+
+.singleProduct-colors-sizes {
+  display: flex;
+  justify-content: space-between;
+  color: #21a5b7;
+  padding-top: 1.5rem;
+}
+
+.singleProduct-colors-sizes h2 {
+  font-size: medium;
+}
+
+.singleProduct-colors-sizes .colors {
+  display: flex;
+  gap: 1rem;
+}
+
+.singleProduct-colors-sizes .sizes {
+  display: flex;
+  gap: 1rem;
+}
+
+.sinleProduct-button {
+  padding-top: 1.7rem;
+}
+
+.color-circle {
+  margin-top: 0.6rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.sizes-container {
+  text-transform: uppercase;
+}
+
+.sizes-container .sizes p {
+  font-size: 12px;
+  margin-right: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
