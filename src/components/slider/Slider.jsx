@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Slider.css";
 import PrimaryButton from "../button/PrimaryButton";
 import { sliderItems } from "../../data";
+import { Link } from "react-router-dom";
 import {
   IoMdArrowBack,
   IoMdArrowDropleft,
@@ -40,7 +41,9 @@ const Slider = () => {
             <div className="info-container">
               <h1 className="title">{i.title}</h1>
               <p className="desc">{i.desc}</p>
-              <PrimaryButton name="Shop Now" />
+              <Link to="/products">
+                <PrimaryButton name="Shop Now" />
+              </Link>
             </div>
           </div>
         ))}
