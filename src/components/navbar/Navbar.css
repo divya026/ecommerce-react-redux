@@ -2,13 +2,18 @@
   display: flex;
   align-items: center;
   text-align: center;
+  height: 8vh;
   font-size: 10px;
   justify-content: space-around;
-  margin-top: 2rem;
+  margin-top: 2.1rem;
   width: 100%;
+  background-color: #e1fbff;
+  position: sticky;
+  top: 7vh;
+  z-index: 400;
 }
+
 .navbar-left {
-  margin-top: 0.8rem;
   flex: 1;
   position: relative;
   display: flex;
@@ -16,6 +21,7 @@
   justify-content: center;
   width: 100%;
   max-width: 300px;
+  padding-left: 1rem;
 }
 
 .navbar-input {
@@ -25,7 +31,7 @@
   border: 1px solid #ccc;
   border-radius: 20px;
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar-input:focus {
@@ -62,6 +68,7 @@
   color: #21a5b7;
   cursor: pointer;
   font-weight: 500;
+  padding: 1rem;
 }
 
 .navbar-right-button {

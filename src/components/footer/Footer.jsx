@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-left">
-        <h3>Shopping App</h3>
+        <h3>Dress Aura</h3>
         <div className="footer-left-desc">
           Discover the perfect dress for every season in our exclusive
           collection of summer, winter, and spring dresses for women. From

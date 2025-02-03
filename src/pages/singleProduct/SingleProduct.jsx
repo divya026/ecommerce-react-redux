@@ -66,6 +66,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { allProducts } from "../../data";
+import Navbar from "../../components/navbar/Navbar";
 import "./SingleProduct.css";
 import PrimaryButton from "../../components/button/PrimaryButton";
 
@@ -88,7 +89,12 @@ const SingleProduct = () => {
   };
 
   return (
+    // <div className="singleProduct-navbar">
+    //   <Navbar />
     <div className="singleProduct-container">
+      <div className="singleProduct-navbar">
+        <Navbar />
+      </div>
       <div className="singleProduct-wrapper">
         <div className="singleProduct-left">
           <div className="singleProduct-left-image">
@@ -146,12 +152,13 @@ const SingleProduct = () => {
             </div>
           </div>
 
-          <div className="sinleProduct-button">
+          <div className="singleProduct-button">
             <PrimaryButton name="ADD TO CART" />
           </div>
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 
