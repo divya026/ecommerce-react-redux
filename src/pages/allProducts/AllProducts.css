@@ -1,4 +1,6 @@
-.allProducts-container {
+.allProducts-navbar {
   margin-top: -40px;
-  padding: 0 10px 0 10px;
+  position: sticky;
+  top: 0;
+  z-index: 400;
 }

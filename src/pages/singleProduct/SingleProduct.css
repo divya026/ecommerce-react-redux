@@ -1,10 +1,18 @@
 .singleProduct-container {
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
   background-color: #f8f6f6;
+}
+
+.singleProduct-navbar {
+  width: 100%;
+  margin-top: -34px;
+  z-index: 400;
 }
 
 .singleProduct-wrapper {
@@ -13,6 +21,8 @@
   justify-content: center;
   height: 80vh;
   width: 70%;
+  margin-top: 40px;
+  margin-bottom: 2rem;
   border-radius: 20px;
   box-shadow: 0 0 10px rgb(203, 202, 202);
 }
@@ -95,8 +105,8 @@
   gap: 1rem;
 }
 
-.sinleProduct-button {
-  padding-top: 1.7rem;
+.singleProduct-button {
+  padding-top: 1rem;
 }
 
 .color-circle {

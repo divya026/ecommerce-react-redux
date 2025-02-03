@@ -12,7 +12,7 @@ const Navbar = () => {
         <IoMdSearch className="navbar-icon" />
       </div>
       <div className="navbar-center">
-        <h1 className="navbar-logo">Shopping App</h1>
+        <h1 className="navbar-logo">Dress Aura</h1>
       </div>
       <div className="navbar-right">
         <div className="navbar-right-item">

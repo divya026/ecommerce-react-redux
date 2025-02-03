@@ -8,7 +8,9 @@ import Footer from "../../components/footer/Footer";
 const AllProducts = () => {
   return (
     <div className="allProducts-container">
-      <Navbar />
+      <div className="allProducts-navbar">
+        <Navbar />
+      </div>
       <Products heading="Products" items={allProducts} />
       <Footer />
     </div>
