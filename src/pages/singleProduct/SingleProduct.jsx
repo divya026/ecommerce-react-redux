@@ -1,68 +1,3 @@
-// import React from "react";
-// import "./SingleProduct.css";
-// import { useParams } from "react-router-dom";
-// import { allProducts } from "../../data";
-// import Navbar from "../../components/navbar/Navbar";
-// import Footer from "../../components/footer/Footer";
-
-// const SingleProduct = () => {
-//   const { id } = useParams();
-//   const product = allProducts.find((i) => i.id === parseInt(id));
-//   console.log(id);
-//   const colors = ["red", "purple", "teal", "green", "black"];
-//   const sizes = ["xs", "s", "m", "l", "xl", "xxl"];
-//   return (
-//     <div className="singleProduct-container">
-//       <Navbar />
-//       <div className="singleProduct-wrapper">
-//         <div className="singleProduct-imageSection">
-//           <img src={product.img} alt="" className="singleProduct-image" />
-//         </div>
-//       </div>
-//       <div className="singleProduct-infoSection">
-//         <h2 className="singleProduct-title">{product.title}</h2>
-//         <p className="singleProduct-number">{product.price}</p>
-//         <h4 className="description-title"></h4>
-//         <p className="singleProduct-description">
-//           Discover the perfect dress for every season in our exclusive
-//           collection of summer, winter, and spring dresses for women. From
-//           breezy floral designs and cozy winter knits to vibrant spring florals,
-//           our dresses combine comfort and style to keep you looking chic all
-//           year long. Shop now and find your new seasonal favorite!
-//         </p>
-//         <div className="singleProduct-options">
-//           <div className="colors-section">
-//             <h4>Colors</h4>
-//             <div className="colors">
-//               {colors.map((color) => (
-//                 <div
-//                   key={color}
-//                   className="color-circle"
-//                   style={{ backgroundColor: color }}
-//                 ></div>
-//               ))}
-//             </div>
-//           </div>
-//           <div className="sizes-section">
-//             <h4>Size</h4>
-//             <div className="sizes">
-//               {sizes.map((size) => (
-//                 <div key={size}>{size}</div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//         <div className="addToCart">
-//           <button>Add to Cart</button>
-//         </div>
-//       </div>
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default SingleProduct;
-
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { allProducts } from "../../data";
@@ -98,9 +33,7 @@ const SingleProduct = () => {
 
   return (
     <div className="singleProduct-container">
-      <div className="singleProduct-navbar">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="singleProduct-wrapper">
         <div className="singleProduct-left">
           <div className="singleProduct-left-image">
