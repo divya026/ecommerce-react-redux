@@ -1,10 +1,12 @@
 import React from "react";
 import "./PrimayButton.css";
 
-const PrimaryButton = ({ name }) => {
+const PrimaryButton = ({ name, onClick }) => {
   return (
     <div>
-      <button className="primary-button">{name}</button>
+      <button className="primary-button" onClick={onClick}>
+        {name}
+      </button>
     </div>
   );
 };
