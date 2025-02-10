@@ -14,12 +14,14 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <Announcement />
-      <Slider />
-      <Categories />
-      <NewArrivals />
-      <Bestseller />
-      <NewsLetter />
-      <Footer />
+      <div className="home-wrapper">
+        <Slider />
+        <Categories />
+        <NewArrivals />
+        <Bestseller />
+        <NewsLetter />
+        <Footer />
+      </div>
     </div>
   );
 };

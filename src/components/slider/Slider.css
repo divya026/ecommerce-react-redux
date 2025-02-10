@@ -52,15 +52,6 @@
   align-items: center;
 }
 
-.img-container {
-  flex: 1;
-  height: 100%;
-}
-
-.img-container .img {
-  height: 80%;
-}
-
 .info-container {
   flex: 1;
   padding: 3.1rem;

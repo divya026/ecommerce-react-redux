@@ -105,7 +105,10 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="checkout-button">
-                    <PrimaryButton name="Proceed to checkout" />
+                    <PrimaryButton
+                      name="Proceed to checkout"
+                      onClick={() => handleCheckout()}
+                    />
                   </div>
                 </div>
                 {/* <div className="summary-details">
