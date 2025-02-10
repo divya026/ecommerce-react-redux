@@ -3,8 +3,11 @@ import "./Navbar.css";
 import { IoMdSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const totalItems = cartItems.length;
   return (
     <div className="navbar-container">
       <div className="navbar-left">
@@ -12,7 +15,7 @@ const Navbar = () => {
         <IoMdSearch className="navbar-icon" />
       </div>
       <div className="navbar-center">
-        <h1 className="navbar-logo">Dress Aura</h1>
+        <h1 className="navbar-logo">DressAura</h1>
       </div>
       <div className="navbar-right">
         <div className="navbar-right-item">
@@ -26,9 +29,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-right-item">
-          <button className="navbar-right-button">
-            <FaShoppingCart />
-          </button>
+          <Link to="/cart">
+            <button className="navbar-right-button">
+              <FaShoppingCart />
+            </button>
+          </Link>
+          {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
         </div>
       </div>
     </div>
