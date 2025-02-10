@@ -69,8 +69,16 @@ import { allProducts } from "../../data";
 import Navbar from "../../components/navbar/Navbar";
 import "./SingleProduct.css";
 import PrimaryButton from "../../components/button/PrimaryButton";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 const SingleProduct = () => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+
   const { id } = useParams();
   const products = allProducts.find((product) => product.id === parseInt(id));
   console.log(products);
@@ -89,8 +97,6 @@ const SingleProduct = () => {
   };
 
   return (
-    // <div className="singleProduct-navbar">
-    //   <Navbar />
     <div className="singleProduct-container">
       <div className="singleProduct-navbar">
         <Navbar />
@@ -139,6 +145,7 @@ const SingleProduct = () => {
               <div className="sizes">
                 {sizes.map((i) => (
                   <p
+                    key={i}
                     style={{
                       border: selectedSize === i ? "1px solid #ccc" : "",
                       padding: ".1rem",
@@ -153,12 +160,14 @@ const SingleProduct = () => {
           </div>
 
           <div className="singleProduct-button">
-            <PrimaryButton name="ADD TO CART" />
+            <PrimaryButton
+              name="ADD TO CART"
+              onClick={() => handleAddToCart(products)}
+            />
           </div>
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 
