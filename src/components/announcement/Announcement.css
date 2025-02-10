@@ -4,17 +4,15 @@
   background-color: #21a5b7;
   color: white;
   text-align: center;
-  font-size: 10px;
+  font-size: 0.6rem;
   position: fixed;
   height: 7vh;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 }
 
 .announcement-container h1 {
-  margin: 5px 0;
+  margin: 0.3rem 0;
   animation: colorChange 5s infinite;
 }
 

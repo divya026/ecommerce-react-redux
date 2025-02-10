@@ -1,31 +1,24 @@
-.cart-navbar {
-  margin-top: -81px;
-  width: 100%;
-  height: 15vh;
-  position: fixed;
-}
-
 .cart-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 75rem;
+  margin: 2.5rem auto;
+  padding: 1.2rem;
 }
 
 .cart-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .cart-title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0.6rem;
   color: #21a5b7;
 }
 
 .cart-icon {
-  font-size: 32px;
+  font-size: 2rem;
   color: #21a5b7;
 }
 
@@ -41,10 +34,10 @@
 
 .cart-summary {
   flex: 1;
-  max-width: 300px;
+  max-width: 18.7rem;
   border: 1px solid #cef6fd;
-  padding: 20px;
-  margin-left: 20px;
+  padding: 1.2rem;
+  margin: 0 1rem 0 1rem;
   background-color: #e1fbff;
   align-self: flex-start;
   color: grey;
@@ -53,10 +46,10 @@
 .cart-header {
   display: grid;
   grid-template-columns: 1.8fr 1fr 1fr 1fr;
-  padding: 10px;
+  padding: 0.6rem;
   background-color: #e1fbff;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
   color: #21a5b7;
 }
 
@@ -68,7 +61,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr auto;
   align-items: center;
-  padding: 10px;
+  padding: 0.6rem;
   border-bottom: 1px solid #e0e0e0;
   color: grey;
 }
@@ -79,11 +72,11 @@
 }
 
 .cart-product-image {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   object-fit: cover;
-  margin-right: 20px;
-  border-radius: 8px;
+  margin-right: 1.2rem;
+  border-radius: 0.5rem;
 }
 
 .cart-price,
@@ -112,17 +105,17 @@
 }
 
 .cart-empty-items h2 {
-  margin-top: -10px;
+  margin-top: -0.6rem;
 }
 
 .cart-quantity button {
   background-color: #e1fbff;
   color: grey;
   border: none;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 0.6rem;
 }
 
 .remove-btn {
@@ -133,27 +126,29 @@
 }
 
 .summary-title {
-  font-size: 24px;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 1rem;
   color: #21a5b7;
 }
 
 .summary-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 18px;
+  gap: 1.2rem;
+  font-size: 1rem;
 }
 
 .summary-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: 1rem 0 0 0;
+  gap: 0.3rem;
+  font-size: 0.9rem;
 }
 
-.summary-item.total {
-  font-weight: bold;
+.summary-total {
+  padding-top: 1rem;
 }
 
 .checkout-button {

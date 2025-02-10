@@ -24,11 +24,13 @@ const Cart = () => {
     return acc + splitPrice[1] * item.quantity;
   }, 0);
 
+  const handleCheckout = () => {
+    alert("This feature is coming soon");
+  };
+
   return (
     <>
-      <div className="cart-navbar">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="cart-container">
         <div className="cart-title-container">
           <BiShoppingBag className="cart-icon" />
@@ -90,7 +92,23 @@ const Cart = () => {
               </div>
               <div className="cart-summary">
                 <h3 className="summary-title"> Order Summary</h3>
+                <div> Rs {totalPrice.toFixed(2)} </div>
                 <div className="summary-details">
+                  <div className="summary-items">
+                    <div className="summary-item">
+                      <span>Delivery:</span>
+                      <span>Free</span>
+                    </div>
+                    <div className="summary-item">
+                      <span>Total:</span>
+                      <span>Rs {totalPrice.toFixed(2)}</span>
+                    </div>
+                  </div>
+                  <div className="checkout-button">
+                    <PrimaryButton name="Proceed to checkout" />
+                  </div>
+                </div>
+                {/* <div className="summary-details">
                   <div className="summary-item">
                     <span>Rs {totalPrice.toFixed(2)}</span>
                   </div>
@@ -104,8 +122,11 @@ const Cart = () => {
                   <span>Rs {totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="checkout-button">
-                  <PrimaryButton name="Proceed to Checkout" />
-                </div>
+                  <PrimaryButton
+                    name="Proceed to Checkout"
+                    onClick={() => handleCheckout()}
+                  />
+                </div> */}
               </div>
             </div>
           </>

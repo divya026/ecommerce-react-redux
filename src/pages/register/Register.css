@@ -8,11 +8,11 @@
 }
 
 .register-wrapper {
-  width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 25rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
   color: white;
-  border-radius: 10px;
-  padding: 30px 40px;
+  border-radius: 0.6rem;
+  padding: 1.875rem 2.5rem;
   backdrop-filter: blur(30px);
   background: transparent;
 }
@@ -24,14 +24,14 @@
 .register-wrapper .input-box {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 3.1rem;
   padding-top: 0.4rem;
 }
 
 .register-wrapper .input-box input {
   width: 100%;
   height: 60%;
-  border-radius: 20px;
+  border-radius: 1.2rem;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 0.3rem;
@@ -45,7 +45,7 @@
 
 .register-wrapper .input-box input::placeholder {
   color: white;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .register-wrapper .register-agreement {
@@ -72,12 +72,12 @@
 .register-wrapper button {
   margin-top: 1rem;
   width: 100%;
-  height: 45px;
+  height: 2.8rem;
   background: #fff;
   border: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
   color: #333;
   font-weight: 700;
   cursor: pointer;
