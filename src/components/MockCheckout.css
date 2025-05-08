@@ -1,0 +1,54 @@
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.checkout-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-content input,
+.checkout-content select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #21a5b7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-content button:hover {
+  background-color: #055c68;
+}
+
+.close-button {
+  margin-top: 10px;
+  background-color: #f44336;
+}
+
+.close-button:hover {
+  background-color: #da190b;
+}

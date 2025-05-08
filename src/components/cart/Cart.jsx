@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../navbar/Navbar";
 import "./Cart.css";
@@ -13,11 +13,13 @@ import { IoClose } from "react-icons/io5";
 import cart from "../../assets/cart.png";
 import Footer from "../footer/Footer";
 import { useNavigate } from "react-router-dom";
+import MockCheckout from "../MockCheckout";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   const totalPrice = cartItems.reduce((acc, item) => {
     const splitPrice = item.price.split(" ");
@@ -25,7 +27,7 @@ const Cart = () => {
   }, 0);
 
   const handleCheckout = () => {
-    alert("This feature is coming soon");
+    setIsCheckoutOpen(true);
   };
 
   return (
@@ -105,7 +107,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="checkout-button">
-                    <PrimaryButton name="Proceed to checkout" />
+                    <PrimaryButton name="Proceed to checkout" onClick={handleCheckout} />
                   </div>
                 </div>
                 {/* <div className="summary-details">
@@ -135,6 +137,11 @@ const Cart = () => {
           <Footer />
         </div>
       </div>
+      <MockCheckout 
+        isOpen={isCheckoutOpen} 
+        onClose={() => setIsCheckoutOpen(false)} 
+        totalAmount={totalPrice.toFixed(2)}
+      />
     </>
   );
 };
